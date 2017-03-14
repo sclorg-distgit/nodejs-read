@@ -6,9 +6,9 @@
 
 Name:       %{?scl_prefix}nodejs-read
 Version:    1.0.7
-Release:    1%{?dist}
+Release:    2%{?dist}
 Summary:    An implementation of read(1) for node programs
-License:    BSD
+License:    ISC
 URL:        https://github.com/isaacs/read
 Source0:    http://registry.npmjs.org/read/-/read-%{version}.tgz
 BuildArch:  noarch
@@ -37,6 +37,9 @@ cp -pr lib package.json %{buildroot}%{nodejs_sitelib}/read
 %doc LICENSE README.md
 
 %changelog
+* Fri Mar 10 2017 Zuzana Svetlikova <zsvetlik@redhat.com> - 1.0.7-2
+- Correct license
+
 * Thu Sep 15 2016 Zuzana Svetlikova <zsvetlik@redhat.com> - 1.0.7-1
 - Updated with script
 
